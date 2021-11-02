@@ -37,7 +37,11 @@ gem 'jbuilder', '2.7.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3', '1.3.13'
+<<<<<<< HEAD
   gem 'byebug', '9.0.6', platforms: :mri
+=======
+  gem 'byebug', platforms: :mri
+>>>>>>> d2f059c686d1ec9c61856c56bbd5ccb68acf5e70
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '~> 2.13'
   # gem 'selenium-webdriver'
@@ -48,6 +52,7 @@ group :development do
   gem 'web-console', '3.5.1'
   gem 'listen', '3.1.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+<<<<<<< HEAD
   gem 'spring', '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
 end
@@ -61,4 +66,16 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+=======
+  gem 'spring','2.0.2'
+  gem 'spring-watcher-listen', '2.0.1'
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+group :production do
+  gem 'pg', '0.20.0'
+end
+
+
+>>>>>>> d2f059c686d1ec9c61856c56bbd5ccb68acf5e70
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
